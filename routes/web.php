@@ -1,5 +1,6 @@
 <?php
 
+use App\Facades\Compliment;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    $data['wish'] = Compliment::endOfYearWish();
 
-    return view('welcome');
+    return view('welcome',$data);
 });
