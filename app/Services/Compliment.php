@@ -6,17 +6,17 @@ class Compliment
 {
     public function endOfYearWish(): string
     {
-        return 'Bye Bye to the old year';
+        return "The last year was amazing, thank you for being part of it!";
     }
 
     public function newYearWish(): string
     {
-        return 'Happy New Year';
+        return "Happy New Year";
     }
 
     public function randomWish(string $wish): string
     {
-        return "You wish:" .$wish;
+        return "Your wish:" .$wish;
     }
 
 }
